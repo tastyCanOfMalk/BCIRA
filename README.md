@@ -4,11 +4,11 @@ General Notes:
 - Sample replicates need not match, however if number of replicates vary from sample to sample, this will not be displayed in the output
 - Calculations are performed on means rather than each individual measurement. Therefore no standard deviation is available yet.
 
-From launcher.R:
-`sub.fold` must contain .DAT files, with subfolders .../3 and .../24
-`trim.length` controls str_sub(, , x) variable, must select value that homogenizes names
-`run.3` set to `TRUE` if .DAT files to be processed within, else `FALSE`
-`run.24` set to `TRUE` if .DAT files to be processed within, else `FALSE`
+### From launcher.R:
+- `sub.fold` must contain .DAT files, with subfolders .../3 and .../24
+- `trim.length` controls str_sub(, , x) variable, must select value that homogenizes names
+- `run.3` set to `TRUE` if .DAT files to be processed within, else `FALSE`
+- `run.24` set to `TRUE` if .DAT files to be processed within, else `FALSE`
 
 ### Process 
 Running launcher.R will assign above variables and launch the scripts below. After running the scripts the `ggsave()` functions is called for each graph produced and output to `save.dir`
